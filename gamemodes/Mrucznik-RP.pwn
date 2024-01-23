@@ -45,6 +45,7 @@ Mrucznik® Role Play ----> stworzy³ Mrucznik
 //-                                                                                                         -//
 #include <a_samp>
 #define FIX_ispacked 0 
+#define FIX_OnClientCheckResponse 0
 #include <fixes>
 
 //-------<[ Pluginy ]>-------
@@ -81,6 +82,7 @@ Mrucznik® Role Play ----> stworzy³ Mrucznik
 #include <YSI\y_bintree>
 #include <YSI\y_master>
 #include <YSI\y_timers>
+#include <indirection-fix>
 #include <indirection>
 #include <amx_assembly\addressof>
 //redefinition from y_playerarray.inc
