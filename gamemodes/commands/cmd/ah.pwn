@@ -59,31 +59,35 @@ YCMD:ah(playerid, params[], help)
     }
 	if (PlayerInfo[playerid][pAdmin] >= 1)
 	{
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /slap /kick /aj /bp /warn /block /ban /pblock /pban /pwarn /paj");
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /freeze /unfreeze /mute /kill /dpa /mark /gotomark");
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /setint /getint /setvw /getvw /wybieralka");
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /mordinfo /gotomechy /podglad /gotocar /ip");
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /check /pojazdygracza /sb /pokazcb /checktank");
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /respawn /carjump /to /up /getcar /gethere");
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /cnn /cc /spec /unblock /unwarn /forum /pogodaall");
-        SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /usunopis /respawnplayer /respawncar /unbw");
-        SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /setcarint /czyjtonumer /checkbw /diagnoza");
-		SendClientMessage(playerid, COLOR_GRAD1, "*1* ADMIN *** /unbp /tod /agraffiti /banip /uid /cziterzy /unmark");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /slap /kick /aj /bp /warn /block /ban /pblock /pban /pwarn /paj");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /freeze /unfreeze /mute /kill /dpa /mark /gotomark");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /setint /getint /setvw /getvw /wybieralka");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /mordinfo /gotomechy /podglad /gotocar /ip");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /check /pojazdygracza /sb /pokazcb /checktank");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /respawn /carjump /to /up /getcar /gethere");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /cnn /cc /spec /unblock /unwarn /forum /pogodaall");
+        SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /usunopis /respawnplayer /respawncar /unbw");
+        SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /setcarint /czyjtonumer /checkbw /diagnoza");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /unbp /tod /agraffiti /banip /uid /cziterzy /unmark");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /gotoadmin /getposp /gotopos /gotols /gotoszpital /gotolv");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /flip /rapidfly /unaj /undemorgan /obrazenia");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /sethp /dmvon /dmvoff /gotosf /inwigilacja<!>");
+		SendClientMessage(playerid, COLOR_GRAD1, "* ADMIN *** /rozwiaz /rozkuj /lockdown /weryfikuj");
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 5)
 	{
-		SendClientMessage(playerid, COLOR_GRAD4,"*5* ADMIN *** /zawodnik /dajkm /zuzel_start /zuzel_stop /rapidfly /fuelcar");
-		SendClientMessage(playerid, COLOR_GRAD4,"*5* ADMIN *** /getposp /gotopos  /gotols /gotoszpital /gotolv /gotosf /gotoin /gotostad /gotojet");
+		SendClientMessage(playerid, COLOR_GRAD4,"*5* ADMIN *** /zawodnik /dajkm /zuzel_start /zuzel_stop /fuelcar");
+		SendClientMessage(playerid, COLOR_GRAD4,"*5* ADMIN *** /gotoin /gotostad /gotojet");
         SendClientMessage(playerid, COLOR_GRAD4, "*5* ADMIN *** /gotobank /gotostacja /bw");
 		SendClientMessage(playerid, COLOR_GRAD4,"*5* ADMIN *** /cca /ann /nonewbie /checkdom /anulujzp");
 	}
 	if (PlayerInfo[playerid][pAdmin] == 7)
 	{
-		SendClientMessage(playerid, COLOR_GRAD1, "*4* ZAS£U¯ONY *** /sban /sblock /skick /fixveh /sethp");
+		SendClientMessage(playerid, COLOR_GRAD1, "*4* ZAS£U¯ONY *** /sban /sblock /skick /fixveh");
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 10)
 	{
-		SendClientMessage(playerid, COLOR_GRAD4,"*10* ADMIN *** /fdaj /ksam /rozwiedz /setteam /entercar /sethp /setcarhp /dmvon /dmvoff");
+		SendClientMessage(playerid, COLOR_GRAD4,"*10* ADMIN *** /fdaj /ksam /rozwiedz /setteam /entercar /setcarhp");
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 15)
 	{
@@ -95,16 +99,16 @@ YCMD:ah(playerid, params[], help)
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 25)
 	{
-		SendClientMessage(playerid, COLOR_GRAD4,"*25* ADMIN *** /flip /snn /unaj /forceskin /skydive");
+		SendClientMessage(playerid, COLOR_GRAD4,"*25* ADMIN *** /snn /forceskin /skydive");
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 35)
 	{
-		SendClientMessage(playerid, COLOR_GRAD4,"*35* ADMIN *** /undemorgan /fuelcars /setchamp /logout /setdrunk");
+		SendClientMessage(playerid, COLOR_GRAD4,"*35* ADMIN *** /fuelcars /setchamp /logout /setdrunk");
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 100)
 	{
 		SendClientMessage(playerid, COLOR_GRAD4,"*100* ADMIN *** /reloadbans /dajdzwiek /checkteam /bw /dajapteczke /zmienwiek");
-		SendClientMessage(playerid, COLOR_GRAD4,"*100* ADMIN *** /dskill /dsus /setwl /zaraz /obrazenia");
+		SendClientMessage(playerid, COLOR_GRAD4,"*100* ADMIN *** /dskill /dsus /setwl /zaraz");
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 150)
 	{
@@ -112,7 +116,7 @@ YCMD:ah(playerid, params[], help)
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 200)
 	{
-		SendClientMessage(playerid, COLOR_GRAD4,"*200* ADMIN *** /mole {FF0000}/scena /scenaallow /scenadisallow");
+		SendClientMessage(playerid, COLOR_GRAD4,"*200* ADMIN *** /mole {FF0000}/scena /scenaallow /scenadisallow /bigears");
 	}
 	if (PlayerInfo[playerid][pAdmin] >= 1000)
 	{

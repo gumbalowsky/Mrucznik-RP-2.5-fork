@@ -36,7 +36,7 @@ YCMD:undemorgan(playerid, params[], help)
 
     if(IsPlayerConnected(playerid))
     {
-        if(PlayerInfo[playerid][pAdmin] >= 35 || IsAScripter(playerid))
+        if(PlayerInfo[playerid][pAdmin] >= 1 || IsAScripter(playerid))
         {
             
         
@@ -53,11 +53,21 @@ YCMD:undemorgan(playerid, params[], help)
 				{
 					GetPlayerName(giveplayerid, giveplayer, sizeof(giveplayer));
 					GetPlayerName(playerid, sendername, sizeof(sendername));
-					format(string, sizeof(string), "* Uwolni³eœ %s z Fortu DeMorgan.", giveplayer);
+					new typ[12];
+					switch(PlayerInfo[giveplayerid][pJailed])
+					{
+						case 1:
+							typ = "wiêzienia";
+						case 2:
+							typ = "DeMorgan";
+						default:
+							typ = "wiêzienia";
+					}
+					format(string, sizeof(string), "* Uwolni³eœ %s z %s.", giveplayer, typ);
 					SendClientMessage(playerid, COLOR_LIGHTRED, string);
-					format(string, sizeof(string), "* Zosta³eœ uwolniony z DeMorgan przez admina %s.", sendername);
+					format(string, sizeof(string), "* Zosta³eœ uwolniony z %s przez admina %s.", typ, sendername);
 					SendClientMessage(giveplayerid, COLOR_LIGHTRED, string);
-					format(string, sizeof(string), "* %s zosta³ uwolniony z DeMorgan przez admina %s.",giveplayer, sendername);
+					format(string, sizeof(string), "* %s zosta³ uwolniony z %s przez admina %s.", giveplayer, typ, sendername);
 					SendPunishMessage(string, giveplayerid);
 					UnJailDeMorgan(giveplayerid);
 					poscig[giveplayerid] = 0;

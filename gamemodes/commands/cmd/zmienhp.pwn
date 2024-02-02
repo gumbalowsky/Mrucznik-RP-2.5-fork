@@ -39,12 +39,17 @@ YCMD:zmienhp(playerid, params[], help)
 			return 1;
 		}
 
-		if (PlayerInfo[playerid][pAdmin] >= 10 || PlayerInfo[playerid][pAdmin] == 7 || IsAScripter(playerid))
+		if (PlayerInfo[playerid][pAdmin] >= 1 || IsAScripter(playerid))
 		{
 		    if(IsPlayerConnected(playa))
 		    {
 		        if(playa != INVALID_PLAYER_ID)
 		        {
+					if(health > 100 && !IsAHeadAdmin(playerid))
+					{
+						sendTipMessage(playerid, "Wartoœæ hp nie mo¿e przekraczaæ 100");
+						return 1;
+					}
 					new giveplayer[MAX_PLAYER_NAME], additional[54];
 					GetPlayerName(playa, giveplayer, sizeof(giveplayer));
 					SetPlayerHealth(playa, health);
